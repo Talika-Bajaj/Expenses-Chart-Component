@@ -1,7 +1,7 @@
 const chart = document.querySelector('.chart');
 
 async function fetchData(params) {
-    let response = await fetch('/data.json')
+    let response = await fetch('./data.json')
     let data = await response.json();
     // console.log(data);
     renderData(data);
