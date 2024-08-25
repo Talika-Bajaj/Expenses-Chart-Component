@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --Soft_red: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+
+ /* Neutral */
+
+--Dark_brown: hsl(25, 47%, 15%);
+--Medium_brown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very_pale_orange: hsl(33, 100%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_pale_orange);
+}
+
+main {
+    margin: 50px auto;
+}
+
+.card {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 35px;
+}
+
+.balance-div {
+    padding: 28px;
+    border-radius: 12px;
+    background-color: var(--Soft_red);
+    display: flex;
+    justify-content: space-between;
+    color: var(--Very_pale_orange);
+}
+
+.balance {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+}
+
+
+.amt {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.info {
+    background-color: #fff;
+    padding: 35px 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 18px;
+}
+
+.info h1 {
+    color: var(--Dark_brown);
+    /* font-size: 36px; */
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: var(--Medium_brown);
+}
+
+.monthly-amt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--Medium_brown);
+}
+
+.curr-mon {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5px;
+}
+
+.month-amt {
+    color: var(--Dark_brown);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.rate {
+    color: var(--Dark_brown);
+    font-weight: 700;
+    text-align: right;
+    font-size: 18px;
+}
+
+.chart {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.graph {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.graph p {
+    color: var(--Medium_brown);
+}
+
+.bar {
+    width: 40px;
+    border-radius: 4px;
+    background-color: var(--Soft_red);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.bar:hover {
+    background-color: hsl(10deg 100% 83.25%);
+}
+
+#bar-3 {
+    transition: all 0.3s ease-in;
+    background-color: var(--Cyan) !important;
+}
+
+#bar-3:hover {
+    background-color: hsl(186deg 62.2% 74.27%) !important;
+}
+
+.show-amt {
+    position: absolute;
+    opacity: 0;
+    /* display: none; */
+    background-color: black;
+    color: white;
+    padding: 7px 8px;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    top: -45px;
+    font-weight: 700;
+    font-size: 15px;
+}

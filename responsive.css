@@ -1,0 +1,13 @@
+@media screen and (width>500px) {
+    .card {
+        width: 457px;
+    }
+
+    .info {
+        padding: 35px;
+    }
+
+    .chart {
+        gap: 18px;
+    }
+}
