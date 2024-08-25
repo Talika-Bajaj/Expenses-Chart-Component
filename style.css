@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--Very_pale_orange);
+    background-color: var(--Cream);
 }
 
 main {
@@ -35,7 +35,7 @@ main {
     width: 90vw;
     display: grid;
     grid-template-columns: 100%;
-    gap: 35px;
+    gap: 20px;
 }
 
 .balance-div {
@@ -50,7 +50,7 @@ main {
 .balance {
     display: grid;
     grid-template-columns: 100%;
-    gap: 5px;
+    gap: 12px;
 }
 
 
@@ -60,12 +60,12 @@ main {
 }
 
 .info {
-    background-color: #fff;
+    background-color: var(--Very_pale_orange);
     padding: 35px 20px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: 100%;
-    gap: 18px;
+    gap: 25px;
 }
 
 .info h1 {
@@ -94,7 +94,7 @@ hr {
 
 .month-amt {
     color: var(--Dark_brown);
-    font-size: 40px;
+    font-size: 43px;
     font-weight: 700;
 }
 
@@ -128,7 +128,7 @@ hr {
 }
 
 .bar {
-    width: 40px;
+    width: 42px;
     border-radius: 4px;
     background-color: var(--Soft_red);
     cursor: pointer;
@@ -153,11 +153,12 @@ hr {
     opacity: 0;
     /* display: none; */
     background-color: black;
-    color: white;
+    color: white !important;
     padding: 7px 8px;
     transition: all 0.3s ease-in;
     border-radius: 5px;
     top: -45px;
     font-weight: 700;
     font-size: 15px;
+
 }
